@@ -12,6 +12,7 @@ class List extends React.Component {
   };
 
   handleCheck = id => {
+    // TODO on click, if checked, should delete item
     const { myTodoListData } = this.state;
     const todoListUpdated = myTodoListData.map(item => {
       if (item.id === id) {
